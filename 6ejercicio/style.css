@@ -1,0 +1,48 @@
+* {
+  height: 0;
+  width: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  flex-direction: column;
+}
+div {
+  height: 25vh;
+  width: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about {
+  background-color: tomato;
+}
+.skills {
+  background-color: salmon;
+}
+.services {
+  background-color: skyblue;
+}
+.contact {
+  background-color: rgb(152, 235, 135);
+}
+h2 {
+  margin: 0 auto;
+}
+hr {
+  background-color: black;
+  width: 100%;
+}
+header.skills > div {
+  background-color: salmon;
+}
+@media (min-width: 500px) {
+  div {
+    height: 100vh;
+    width: 25%;
+  }
+  header {
+    flex-direction: row;
+  }
+}
